@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question"
+        android:text="Total Question"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This will be the Questions"
+        android:layout_above="@id/choice_layout"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/question"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/choice_layout"
+       android:layout_centerInParent="true">
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:id="@+id/ans_A"
+           android:text="Ans A"
+           android:textColor="@color/black"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:id="@+id/ans_B"
+           android:text="Ans B"
+           android:textColor="@color/black"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:id="@+id/ans_C"
+           android:text="Ans C"
+           android:textColor="@color/black"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/white"
+           android:id="@+id/ans_D"
+           android:text="Ans D"
+           android:textColor="@color/black"/>
+
+
+   </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_layout"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:id="@+id/submit_btn"/>
+
+
+
+
+
+</RelativeLayout>
